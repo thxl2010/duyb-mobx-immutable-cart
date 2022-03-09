@@ -1,5 +1,12 @@
+import AppleContainer from './AppleCart/Container';
+import { AppleListStoreProvider } from '../store/AppleListStore';
+
 function App() {
-  return <div>App working</div>;
+  return (
+    <AppleListStoreProvider>
+      <AppleContainer />
+    </AppleListStoreProvider>
+  );
 }
 
 export default App;
