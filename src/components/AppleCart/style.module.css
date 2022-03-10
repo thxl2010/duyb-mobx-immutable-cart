@@ -37,12 +37,7 @@
 .statsItemTitle {
   color: var(--main-color);
 }
-:global(ul) {
-  padding-inline-start: 0;
-}
-:global(li) {
-  list-style: none;
-}
+
 :global(button) {
   padding: 12px 30px;
   border-radius: 4px;

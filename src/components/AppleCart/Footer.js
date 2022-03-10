@@ -10,11 +10,16 @@ function Footer() {
   return (
     <div className={styles.footer}>
       <button
-        onClick={() => loadApple()}
+        onClick={() => {
+          if (!loading) {
+            loadApple();
+          }
+        }}
         className={[
           `${styles.btnSuccess}`,
           loading ? `${styles.loading}` : '',
         ].join(' ')}
+        disabled={loading}
       >
         {loading ? '正在采摘...' : '摘苹果'}
       </button>
